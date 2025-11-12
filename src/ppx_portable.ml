@@ -149,6 +149,7 @@ module Let_rec_extension = struct
                      | Untyped { tyvar } -> ptyp_var ~loc tyvar))))
         ~private_:Public
         ~manifest:None
+        ()
     ]
     |> pstr_type ~loc Nonrecursive
   ;;
